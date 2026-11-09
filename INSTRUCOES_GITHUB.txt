@@ -1,0 +1,10 @@
+GERAR APK NA NUVEM (GITHUB ACTIONS)
+1. Crie uma conta em https://github.com
+2. Crie um repositório PRIVADO vazio, sem README.
+3. Envie o conteúdo desta pasta para a raiz do repositório, incluindo .github/workflows/android-apk.yml.
+   Atenção: a pasta .github é oculta em alguns gerenciadores de arquivos.
+4. Abra a aba Actions e execute o fluxo Gerar APK Help-Tech (Run workflow), ou aguarde a execução do push para main.
+5. Após a execução ficar verde, abra a execução e baixe Gestao-HelpTech-APK em Artifacts.
+6. Extraia o ZIP baixado e instale app-debug.apk no celular.
+
+Este é um APK DE TESTE, não uma versão de produção. Ele abre a interface servida no endereço Tailscale http://100.87.64.24:8765/?v=6. É necessário manter o servidor e Tailscale ativos. O armazenamento do WebView é separado do Chrome: não migra agendamentos locais antigos. Não inclui sirene de alertas nativa.

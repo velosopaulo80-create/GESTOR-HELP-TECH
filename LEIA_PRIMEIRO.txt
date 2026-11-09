@@ -1,0 +1,18 @@
+GESTÃO HELP-TECH — PROJETO ANDROID INICIAL
+
+Este é um projeto-fonte para Android Studio, NÃO é um APK compilado.
+
+1. Abra esta pasta no Android Studio (File > Open).
+2. Aguarde a sincronização do Gradle e instale os componentes Android SDK solicitados.
+3. Menu Build > Build Bundle(s) / APK(s) > Build APK(s).
+4. Instale o APK gerado no Samsung Galaxy A32.
+5. Mantenha o Tailscale ativo no celular e o sincronizador V6 em execução no Windows.
+
+IMPORTANTE:
+- O app abre a interface V6 hospedada no servidor Windows em http://100.87.64.24:8765/?v=6.
+- Os dados locais do aplicativo são SEPARADOS dos dados locais do Chrome. Antes de migrar, sincronize todos os agendamentos pendentes no Chrome. Não desinstale ou limpe os dados antigos antes de conferir no Windows.
+- O app não funciona totalmente offline; quando a página já foi carregada, o armazenamento local pode persistir, mas a inicialização offline não é garantida.
+- O envio automático funciona enquanto a página do aplicativo está aberta. Não há sincronização confiável em segundo plano nem alertas nativos nesta versão.
+- A conexão HTTP sobre Tailscale depende da segurança da rede privada; para distribuição ampla, recomenda-se HTTPS e revisão de segurança.
+- O targetSdk 28 foi escolhido para compatibilidade inicial com HTTP local; deve ser modernizado antes de publicar na Play Store.
+- O projeto ainda não foi compilado nem testado em dispositivo físico neste ambiente.

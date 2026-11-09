@@ -1,0 +1,29 @@
+GESTÃO HELP-TECH ANDROID — PROJETO V2 BETA
+
+ATENÇÃO: Este ZIP é código-fonte para GitHub Actions, não é um APK instalado.
+
+Inclui:
+- interface vertical baseada na arte aprovada;
+- criação de usuário e senha independentes do Gestor Windows na primeira abertura;
+- hash PBKDF2 com salt para a senha local;
+- chave de sincronização criptografada via Android Keystore;
+- configuração separada do IP/porta/chave;
+- tela de agendamentos e criação de serviços;
+- sincronização com API V8 existente, sem alterar o Gestor Windows;
+- notificações nativas de serviços 1 hora antes, ações Reconhecer e Prorrogar 30 minutos.
+
+LIMITAÇÕES IMPORTANTES:
+- A sirene utiliza o som de alarme configurado no Android; não é uma sirene contínua garantida até reconhecimento. A duração e o modo silencioso dependem do Android e das permissões.
+- O agendamento de alarmes depende de a agenda ter sido sincronizada com o app aberto; reiniciar o aparelho pode eliminar alarmes agendados.
+- Alarmes exatos podem depender de permissão específica; sem ela o horário pode atrasar.
+- Não há lembrete diário de reagendamentos implementado nesta versão beta.
+- A página web do Windows não é alterada.
+- A interface do Android usa uma imagem de referência visual e componentes reais, não é uma cópia pixel a pixel da imagem.
+- Faça backup antes de atualizar; não limpe dados do app anterior, pois pode haver agendamentos pendentes na versão antiga.
+- Teste a compilação no GitHub Actions e o APK no Galaxy A32 antes de depender dos alertas.
+
+INSTRUÇÕES:
+1. Envie os arquivos deste ZIP para a raiz do repositório GitHub Gestao-HelpTech-Android, substituindo os arquivos antigos.
+2. Abra Actions > Gerar APK Help-Tech > Run workflow.
+3. Baixe o artefato Gestao-HelpTech-APK e extraia app-debug.apk.
+4. Instale por cima do app anterior, sem desinstalar, se a assinatura permitir.
